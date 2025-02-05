@@ -1,0 +1,56 @@
+
+# Lista de Comandos Git
+
+## Comandos Básicos
+- git init: Inicializa um novo repositório Git.
+- git clone <url>: Clona um repositório remoto para o seu computador.
+- git add <arquivo>: Adiciona alterações no arquivo especificado para a próxima confirmação (commit).
+- git commit -m "mensagem": Realiza um commit com uma mensagem explicativa.
+- git status: Exibe o estado dos arquivos no diretório de trabalho e na área de staging.
+- git diff: Exibe as diferenças entre arquivos ou commits.
+- git log: Exibe o histórico de commits.
+- git show <commit>: Exibe detalhes de um commit específico.
+- git reset <commit>: Reseta o repositório para um commit anterior.
+- git rm <arquivo>: Remove um arquivo do repositório.
+
+## Trabalhando com Branches
+- git branch: Lista as branches locais.
+- git branch <nome>: Cria uma nova branch.
+- git checkout <branch>: Muda para a branch especificada.
+- git checkout -b <branch>: Cria e muda para uma nova branch.
+- git merge <branch>: Mescla a branch especificada na branch atual.
+- git branch -d <branch>: Deleta uma branch local.
+- git branch -r: Lista as branches remotas.
+- git branch -a: Lista todas as branches (locais e remotas).
+
+## Trabalhando com Repositórios Remotos
+- git remote -v: Exibe as URLs dos repositórios remotos.
+- git remote add <nome> <url>: Adiciona um repositório remoto.
+- git remote remove <nome>: Remove um repositório remoto.
+- git fetch: Busca as alterações do repositório remoto sem fazer merge.
+- git fetch -p: Busca as alterações e remove referências a branches remotas deletadas.
+- git pull: Faz um git fetch seguido de um git merge.
+- git push: Envia suas alterações para o repositório remoto.
+- git push -u origin <branch>: Envia e cria uma nova branch remota com o nome da branch local.
+
+## Comandos Avançados
+- git rebase <branch>: Reaplica commits de uma branch sobre outra.
+- git cherry-pick <commit>: Aplica um commit específico em outra branch.
+- git revert <commit>: Cria um novo commit que desfaz as alterações de um commit anterior.
+- git stash: Armazena mudanças temporariamente para que você possa trabalhar em outra coisa.
+- git stash apply: Aplica as alterações armazenadas no stash.
+- git reflog: Exibe o histórico dos movimentos de HEAD no repositório.
+- git bisect: Realiza uma busca binária para encontrar qual commit introduziu um erro.
+- git submodule: Comandos para gerenciar submódulos Git, que são repositórios dentro de outros repositórios.
+
+## Comandos de Configuração
+- git config --global user.name "Seu Nome": Define o nome de usuário globalmente.
+- git config --global user.email "seuemail@example.com": Define o e-mail globalmente.
+- git config --list: Exibe todas as configurações do Git.
+
+## Outros Comandos Úteis
+- git init: Inicializa um novo repositório Git.
+- git tag <tag>: Cria uma nova tag no commit atual.
+- git tag -d <tag>: Deleta uma tag.
+- git log --oneline: Exibe o histórico de commits de forma compacta.
+- git log --graph: Exibe o histórico de commits de forma gráfica.
